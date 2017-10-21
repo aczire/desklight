@@ -23,10 +23,8 @@ namespace desklight
             {
                 if (new FileInfo(spotfile).Length > 250000)
                 {
-                    //System.Console.WriteLine(spotfile);
                     if (Image.FromFile(spotfile).Width > Image.FromFile(spotfile).Height)
                     {
-                        //Console.WriteLine(spotfile);
                         spotLightImages.Add(spotfile);
                     }
                 }
